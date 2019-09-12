@@ -1,5 +1,4 @@
 // Follow the order in the readme
-
 @import "variables";
 @import "mixins";
 @import "reset";
@@ -7,3 +6,53 @@
 @import "navigation";
 @import "footer";
 @import "home-page";
+
+@media @mobile {
+  .content-section {
+    .display(column, space-around, center);
+    .text-content {
+      width: 100px;
+    }
+  }
+
+  .home .content-section .text-content {
+    width: 100%;
+  }
+
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 1%;
+  }
+
+  .home .content-section .img-content img {
+    border-radius: 10px;
+    width: 100%;
+  }
+
+  .home .content-destination {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  .home .content-destination img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .home .content-pick {
+    width: 100%;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+
+  .inverse-content {
+    .display(column-reverse, space-around, center);
+  }
+
+  .content-pick {
+    .display(column, space-around, center);
+  }
+}
+
+.btn {
+  .btnStyle(@button-bg, 1.6rem, 100%, 45px, 10%, white);
+}

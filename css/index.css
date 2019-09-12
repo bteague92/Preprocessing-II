@@ -134,14 +134,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: "Indie Flower", cursive;
 }
 h1 {
   font-size: 4rem;
@@ -167,6 +167,31 @@ img {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.2rem;
+  margin-top: 1.2rem;
+  border-bottom: 2px dashed lightGrey;
+}
+.nav .navWords {
+  font-size: 4.5rem;
+  font-family: "Indie Flower", cursive;
+}
+.nav nav {
+  width: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 .footer {
   width: 100%;
@@ -224,4 +249,70 @@ img {
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+header .headerImage {
+  margin-bottom: 2rem;
+}
+header .headerHead {
+  margin-bottom: 1.5rem;
+}
+header .headerBody {
+  border-bottom: 2px dashed lightGrey;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content-section .text-content {
+    width: 100px;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+    padding-left: 1%;
+  }
+  .home .content-section .img-content img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .home .content-destination {
+    width: 100%;
+    margin: 0 auto 30px;
+  }
+  .home .content-destination img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .home .content-pick {
+    width: 100%;
+  }
+  .home .content-pick .destination {
+    width: 100%;
+  }
+  .inverse-content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .content-pick {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.btn {
+  height: 45px;
+  width: 100%;
+  font-size: 1.6rem;
+  background: #17a2b8;
+  border-radius: 10%;
+  color: white;
 }
