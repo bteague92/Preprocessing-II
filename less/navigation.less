@@ -2,6 +2,9 @@
 
 .nav {
   .display(row, space-between, center);
+  @media @mobile {
+    .display(column, center, center);
+  }
 
   .navWords {
     font-size: 4.5rem;
