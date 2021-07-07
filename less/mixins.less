@@ -1,1 +1,23 @@
 // Mixins in here
+
+.btnStyle(@btnColor, @btnFontSize, @btnWidth, @btnHeight, @btnRadius, @btnText) {
+  height: @btnHeight;
+  width: @btnWidth;
+  font-size: @btnFontSize;
+  background: @btnColor;
+  border-radius: @btnRadius;
+  color: @btnText;
+}
+
+.display(@direction, @justify, @align) {
+  display: flex;
+  flex-direction: @direction;
+  justify-content: @justify;
+  align-items: @align;
+}
+
+.box-shadow-mixin (@one, @two, @three) {
+  -webkit-box-shadow: @one;
+  -mox-box-shadow: @two;
+  box-shadow: @three;
+}
